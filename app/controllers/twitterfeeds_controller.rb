@@ -4,7 +4,7 @@ class TwitterfeedsController < ApplicationController
   # GET /twitterfeeds
   # GET /twitterfeeds.json
   def index
-    @twitter_feed  = Twitter.user_timeline("SammyKhaleel").first.text
+    #@twitter_feed  = Twitter.user_timeline("SammyKhaleel").first.text
   end
 
   # GET /twitterfeeds/1
