@@ -32,7 +32,12 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
   
-
+@@client = Twitter::REST::Client.new do |config|
+  config.consumer_key = 'AfmJgIlPWCoetxNUGSVGkQzqN'
+  config.consumer_secret = 'JqZWXepFzApQQ4B1WAd9N5MymHoH1almYvAj95vT7domBbHU5U'
+  config.oauth_token = '1284314953-vnAmfMLM7UGHUOyfWHapkRXXOBoEa5mfLwYpLxP'
+  config.oauth_token_secret = 'XWGJDISQ0TVSdOoV9WNEyAGsGBM1HkqEZdahcD8q4iQk4'
+end
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
