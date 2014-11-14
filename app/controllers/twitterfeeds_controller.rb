@@ -10,7 +10,7 @@ end
   # GET /twitterfeeds
   # GET /twitterfeeds.json
   def index
-    @tweets = user_timeline(2)#@twitter_feed  = Twitter.user_timeline("SammyKhaleel").first.text
+    @tweets = user_timeline(5)#@twitter_feed  = Twitter.user_timeline("SammyKhaleel").first.text
   end
   def user_timeline(qt)
     @@client.user_timeline(count: qt)
